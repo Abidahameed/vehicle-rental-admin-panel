@@ -55,12 +55,12 @@
       "id": "6"
     },
     {
-      "id": "5bed",
-      "name": "wer",
-      "TopSpeed": 234,
-      "RatePerHour": 25,
-      "FuelType": "Diesel",
-      "available": "No",
+      "id": "b2f9",
+      "name": "honda",
+      "TopSpeed": 242,
+      "RatePerHour": 44,
+      "FuelType": "Petrol",
+      "available": "Yes",
       "image": "assets/images/tesla.jpg"
     }
   ]
