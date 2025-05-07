@@ -1,0 +1,38 @@
+<div class="layout">
+  <aside class="sidebar">
+    <div class="top-section">
+      <div class="logo">Dashboard</div>
+      <nav>
+        <a 
+        routerLink="/home" 
+        routerLinkActive="active" 
+        [routerLinkActiveOptions]="{ exact: true }" 
+        class="nav-item">
+        <i class="fas fa-home icon"></i> Home
+      </a>
+      <a 
+      routerLink="/vehicle-list" 
+      routerLinkActive="active" 
+      [routerLinkActiveOptions]="{ exact: true }" 
+      class="nav-item">
+      <i class="fas fa-car icon"></i> Vehicles
+    </a>
+    
+    <a 
+      routerLink="/vehicle-add" 
+      routerLinkActive="active" 
+      [routerLinkActiveOptions]="{ exact: true }" 
+      class="nav-item">
+      <i class="fas fa-plus icon"></i> Add Vehicle
+    </a>
+    
+      </nav>
+    </div>
+  </aside>
+
+  <main class="main-panel">
+    <router-outlet></router-outlet>
+  </main>
+</div>
+
+  

@@ -1,0 +1,15 @@
+<div class="deleteModal">
+    <div  style="display: flex; justify-content: space-between;padding: 5px 10px;">
+        <h1>Delete Confirmation</h1>
+        <mat-icon (click)="closeDialog()">close</mat-icon>
+    </div>
+    <div fxLayout="row wrap" style="padding: 20px;">
+        <div fxFlex.gt-sm fxFlex="100">
+            <p>Do you really want to delete ?</p>
+            <div class="buttonDiv">
+                <button mat-raised-button style="margin-right: 5px;" (click)="closeDialog()">No</button>
+                <button mat-raised-button style="margin-right: 5px;" (click)="deleteVehicle()">Delete</button>
+            </div> 
+        </div>
+    </div>
+</div>

@@ -1,0 +1,67 @@
+{
+  "vehicles": [
+    {
+      "name": "Tesla Model S2",
+      "TopSpeed": 42,
+      "RatePerHour": 2,
+      "FuelType": "Diesel",
+      "available": "No",
+      "image": "assets/images/tesla.jpg",
+      "id": "1"
+    },
+    {
+      "name": "Toyota Corolla",
+      "TopSpeed": 180,
+      "RatePerHour": 13,
+      "FuelType": "Petrol",
+      "available": true,
+      "image": "assets/images/corolla.jpg",
+      "id": "2"
+    },
+    {
+      "name": "BMW X5",
+      "TopSpeed": 250,
+      "FuelType": "Diesel",
+      "available": false,
+      "RatePerHour": "500 Rs",
+      "image": "assets/images/bmw.jpg",
+      "id": "3"
+    },
+    {
+      "name": "Honda Civic",
+      "TopSpeed": 220,
+      "FuelType": "Petrol",
+      "available": true,
+      "RatePerHour": "200 Rs",
+      "image": "assets/images/civic.jpg",
+      "id": "4"
+    },
+    {
+      "name": "Audi A4",
+      "TopSpeed": 240,
+      "RatePerHour": 32,
+      "FuelType": "Diesel",
+      "available": "No",
+      "image": "assets/images/audi.jpg",
+      "id": "5"
+    },
+    {
+      "name": "Ford Mustang",
+      "TopSpeed": 2600,
+      "RatePerHour": 56,
+      "FuelType": "Petrol",
+      "available": false,
+      "image": "assets/images/ford.jpg",
+      "id": "6"
+    },
+    {
+      "id": "5bed",
+      "name": "wer",
+      "TopSpeed": 234,
+      "RatePerHour": 25,
+      "FuelType": "Diesel",
+      "available": "No",
+      "image": "assets/images/tesla.jpg"
+    }
+  ]
+}

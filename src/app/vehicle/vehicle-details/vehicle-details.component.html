@@ -1,0 +1,24 @@
+<div class="vehicle-details-container">
+  <h1>Vehicle Details</h1>
+  <div class="content-container">
+    <img [src]="data.image" [alt]="data.name" class="vehicle-cover" />
+    <div class="vehicle-info">
+      <div class="form-group">
+        <label>Name:</label>
+        <p>{{ data.name }}</p>
+      </div>
+      <div class="form-group">
+        <label>Top Speed:</label>
+        <p>{{ data.TopSpeed }}</p>
+      </div>
+      <div class="form-group">
+        <label>Fuel Type:</label>
+        <p>{{ data.FuelType }}</p>
+      </div>
+      <div class="form-group">
+        <label>Rate Per Hour:</label>
+        <p>${{ data.RatePerHour }}</p>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,80 @@
+<div class="vehicle-form-container">
+  <div class="form-wrapper">
+    <h1>{{ selectedVehicleId === null ? 'Add Vehicle' : 'Update Vehicle' }}</h1>
+
+    <form [formGroup]="addForm" (ngSubmit)="onSubmit()">
+      <div class="form-row">
+        <mat-form-field appearance="outline" class="full-width">
+          <mat-label>Name</mat-label>
+          <input matInput formControlName="name" />
+          <mat-error *ngIf="addForm.get('name')?.invalid && addForm.get('name')?.touched">
+            Name is required.
+          </mat-error>
+        </mat-form-field>
+      </div>
+
+      <div class="form-row two-cols">
+        <mat-form-field appearance="outline">
+          <mat-label>TopSpeed</mat-label>
+          <input matInput formControlName="TopSpeed" type="number" min="0" class="no-spinner" (keypress)="allowOnlyNumbers($event)"/>
+          <mat-error *ngIf="addForm.get('TopSpeed')?.invalid && addForm.get('TopSpeed')?.touched">
+            TopSpeed is required.
+          </mat-error>
+        </mat-form-field>
+
+        <mat-form-field appearance="outline">
+          <mat-label>RatePerHour</mat-label>
+          <input matInput formControlName="RatePerHour" type="number" min="0" class="no-spinner" (keypress)="allowOnlyNumbers($event)"/>
+          <mat-error *ngIf="addForm.get('RatePerHour')?.invalid && addForm.get('RatePerHour')?.touched">
+            RatePerHour is required.
+          </mat-error>
+        </mat-form-field>
+      </div>
+
+      <div class="form-row  two-cols">
+        <mat-form-field appearance="outline" >
+          <mat-label>Fuel Type</mat-label>
+          <mat-select formControlName="FuelType">
+            <mat-option value="Diesel">Diesel</mat-option>
+            <mat-option value="Petrol">Petrol</mat-option>
+          </mat-select>
+          <mat-error *ngIf="addForm.get('FuelType')?.invalid && addForm.get('FuelType')?.touched">
+            Fuel Type is required.
+          </mat-error>
+        </mat-form-field>
+   
+
+
+        <mat-form-field appearance="outline">
+          <mat-label>Availability</mat-label>
+          <mat-select formControlName="available">
+            <mat-option value="Yes">Yes</mat-option>
+            <mat-option value="No">No</mat-option>
+          </mat-select>
+          <mat-error *ngIf="addForm.get('available')?.invalid && addForm.get('available')?.touched">
+            Availability is required.
+          </mat-error>
+        </mat-form-field>
+      </div>
+      
+
+      <div class="form-row">
+        <mat-form-field appearance="outline" class="full-width">
+          <mat-label>Image Path (e.g., assets/images/tesla.jpg)</mat-label>
+          <input matInput formControlName="image" placeholder="tesla.jpg" />
+          <mat-error *ngIf="addForm.get('image')?.invalid && addForm.get('image')?.touched">
+            Image path is required.
+          </mat-error>
+        </mat-form-field>
+      </div>
+      
+
+      <div class="form-row">
+        <button  mat-flat-button  class="vehicle-submit-btn"   type="submit">
+        {{ selectedVehicleId === null ? 'Submit' : 'Update ' }}
+      </button>
+      
+      </div>
+    </form>
+  </div>
+</div>

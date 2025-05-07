@@ -1,51 +1,56 @@
-.dashboard-container {
+.layout {
     display: flex;
     font-family: 'Segoe UI', sans-serif;
     background: linear-gradient(135deg, #ffffff, #9db2eb, #dfbaa7);
     height: 100vh;
     overflow: hidden;
+    flex-direction: row;
   }
   
   .sidebar {
     width: 240px;
+  min-width: 240px;
+  max-width: 240px;
+  flex-shrink: 0;
     background: linear-gradient(to bottom, #22293b, #5c688a);
     color: #fff;
     padding: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    border-top-left-radius: 16px;
-    border-bottom-left-radius: 16px;
+    justify-content: space-between; 
   }
   
+  .top-section nav {
+    display: flex;
+    flex-direction: column;
+  }
   .nav-item {
-    padding: 12px 10px;
-    margin-bottom: 10px;
     display: flex;
     align-items: center;
-    border-radius: 10px;
+    gap: 20px;
+    padding: 12px 10px;
+    margin-bottom: 25px;
     color: #cad1d9;
+    border-radius: 10px;
     font-weight: 500;
+    text-decoration: none;
     transition: all 0.2s ease;
+  }
+  
+  .nav-item .icon {
+    font-size: 16px;
+    width: 20px;
   }
   
   .nav-item.active,
   .nav-item:hover {
     background: rgba(255, 255, 255, 0.1);
     color: #fff;
+    
   }
-  
   .sidebar .logo {
     font-size: 1.5em;
     font-weight: bold;
     margin-bottom: 30px;
-  }
-
-  
-  .nav-item:hover {
-    color: #fff;
-    background: rgba(255,255,255,0.1);
-    padding: 5px 10px;
-    border-radius: 8px;
   }
   
